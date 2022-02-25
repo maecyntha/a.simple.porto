@@ -1,5 +1,107 @@
+
+/* PALLETE */ /*
+--isabelline: #f1e8e8ff;
+--ultra-red: #fa7a96ff;
+--mauve: #e2a3f7ff;
+--baby-blue-eyes: #9ccaf0ff;
+--celeste: #a9f4e8ff;
+--celadon: #9be8b2ff;
+--lemon-yellow-crayola: #f2f291ff;
+--peach-crayola: #eec19aff;
+--platinum: #e5e5e5ff;
+*/
+
+/* GRADIENT */ /*
+$gradient-top: linear-gradient(0deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-right: linear-gradient(90deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-bottom: linear-gradient(180deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-left: linear-gradient(270deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-top-right: linear-gradient(45deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-bottom-right: linear-gradient(135deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-top-left: linear-gradient(225deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-bottom-left: linear-gradient(315deg, #f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+$gradient-radial: radial-gradient(#f1e8e8ff, #fa7a96ff, #e2a3f7ff, #9ccaf0ff, #a9f4e8ff, #9be8b2ff, #f2f291ff, #eec19aff, #e5e5e5ff);
+*/
+
+
 @media (min-width: 1200px) {
     .container {
         max-width: 970px;
     }
+}
+
+@media (max-width: 970px) {
+    #construction {
+        text-align: center !important;
+    }
+}
+
+@font-face {
+    font-family: Jaapoki;
+    src: url(font/Jaapokki-Regular.otf);
+  }
+
+body {
+    background-color: #f1ecec;
+    font-family: Jaapoki;
+    margin: 30px;
+}
+
+p {
+    line-height: 40%;
+}
+
+#intro {
+    background-color: #ff737c;
+    color: #e5e5e5ff;
+}
+
+#profile img {
+    width: 120px;
+    align-items: center;
+}
+
+#profile h5 {
+    width: 450px;
+    border-radius: 8px;
+}
+
+#profile p {
+    color: #e2a3f7ff;
+}
+
+/*portofolio*/
+#porto a {
+    text-decoration: none;
+    color: #ff737c;
+}
+
+#porto button {
+    border-radius: 10px; border: #9ccaf0ff solid 1px;
+}
+
+#porto button:hover {
+    color: #eec19aff;
+    box-shadow: gray 2px 2px 2px;
+    background-color: #e5e5e5ff;
+    transition: 0.3s;
+}
+
+#porto button:active {
+    transform: scale(0.9, 0.9);
+}
+
+/*biottom of the page*/
+#construction {
+    border-radius: 30px 30px 0 0;
+    background-color: #e5e5e5ff;
+    margin: 0 -30px -30px -30px !important;
+}
+
+#construction h4 {
+    color: #fa7a96ff;
+}
+
+#construction img {
+    width: 350px;
 }
